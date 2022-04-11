@@ -32,7 +32,7 @@ const UserSelectScreen = ({ navigation }) => {
                     <Heading color={"primary.800"} size="md" textAlign="center">How do you want to log in?</Heading>
                     <VStack space={2} pt={5} alignItems="center">
                         <Button bg={"primary.600"} width="100%" onPress={() => navigation.navigate('ClientLogin')}>CLIENT</Button>
-                        <Button bg={"primary.400"} width="100%">PROFESSIONAL</Button>
+                        <Button bg={"primary.400"} width="100%" onPress={() => navigation.navigate('ProfessionalLogin')}>PROFESSIONAL</Button>
                     </VStack>
                 </View>
             </Center>
