@@ -2,7 +2,7 @@ import { Icon, Text, NativeBaseProvider, Box, Heading, HStack, VStack, FormContr
 import React from 'react';
 import { Fontisto, Ionicons, AntDesign } from "@expo/vector-icons";
 
-const Form = () => {
+const Form = (props) => {
     return <Center w="100%" h="100%" bg="primary.50">
         <Box safeArea p="2" py="8" w="100%" bg="primary.50">
             <Heading textAlign="center" size="lg" fontWeight="600" color="coolGray.800" _dark={{
@@ -32,7 +32,7 @@ const Form = () => {
                         Forget Password?
                     </Link>
                 </FormControl>
-                <Button mt="2" bg="primary.400">
+                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ProfessionalMenu')}>
                     Sign in
                 </Button>
                 <Button mt="1" bg="primary.800" leftIcon={<Icon as={AntDesign} name="google" size="sm" />}>
@@ -82,7 +82,7 @@ const ProfessionalLogin = ({navigation}) => {
                     </Button>
                 </Box>
             </Box>
-            <Form />
+            <Form navigation = {navigation}/>
             <Fab onPress={()=>navigation.goBack()} renderInPortal={false} shadow={2} size="4" placement="top-left" icon={<Icon color="white" as={Ionicons} name="chevron-back" size="4" />} />
         </NativeBaseProvider>
     )

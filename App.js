@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import UserSelectScreen from './src/screens/UserSelectScreen';
 import ClientLogin from './src/screens/ClientLogin';
 import ProfessionalLogin from './src/screens/ProfessionalLogin';
+import ProfessionalMenu from './src/screens/ProfessionalMenu';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ function App() {
           <Stack.Screen name="UserSelect" component={UserSelectScreen} options={{ headerShown: false }} />
           <Stack.Screen name="ClientLogin" component={ClientLogin} options={{ headerShown: false }} />
           <Stack.Screen name="ProfessionalLogin" component={ProfessionalLogin} options={{ headerShown: false }} />
+          <Stack.Screen name="ProfessionalMenu" component={ProfessionalMenu} options={{headerShown: false}} />
         </Stack.Navigator>
     </NavigationContainer>
   );
