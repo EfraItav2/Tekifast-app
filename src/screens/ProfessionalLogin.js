@@ -75,15 +75,15 @@ const ProfessionalLogin = ({navigation}) => {
     })
     return (
         <NativeBaseProvider theme={theme}>
-            <Box position="relative" justifyContent={"right"} bg="primary.50">
+            <Box position="relative" bg="primary.50">
                 <Box position="relative" >
-                    <Button mt={"3"} mr={"3"} alignSelf="flex-end" variant="ghost" leftIcon={<Icon as={Fontisto} name="world-o" size="sm" />}>
+                    <Button mt={"30px"} mr={"3"} alignSelf="flex-end" variant="ghost" leftIcon={<Icon as={Fontisto} name="world-o" size="sm" />}>
                         ENG
                     </Button>
                 </Box>
             </Box>
             <Form navigation = {navigation}/>
-            <Fab onPress={()=>navigation.goBack()} renderInPortal={false} shadow={2} size="4" placement="top-left" icon={<Icon color="white" as={Ionicons} name="chevron-back" size="4" />} />
+            <Fab mt={"20px"} onPress={()=>navigation.goBack()} renderInPortal={false} shadow={2} size="4" placement="top-left" icon={<Icon color="white" as={Ionicons} name="chevron-back" size="4" />} />
         </NativeBaseProvider>
     )
 }
