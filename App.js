@@ -6,6 +6,7 @@ import UserSelectScreen from './src/screens/UserSelectScreen';
 import ClientLogin from './src/screens/ClientLogin';
 import ProfessionalLogin from './src/screens/ProfessionalLogin';
 import ProfessionalMenu from './src/screens/ProfessionalMenu';
+import ClientMenu from './src/screens/ClientMenu';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ function App() {
         <Stack.Navigator>
           <Stack.Screen name="UserSelect" component={UserSelectScreen} options={{ headerShown: false }} />
           <Stack.Screen name="ClientLogin" component={ClientLogin} options={{ headerShown: false }} />
+          <Stack.Screen name="ClientMenu" component={ClientMenu} options={{ headerShown: false }} />
           <Stack.Screen name="ProfessionalLogin" component={ProfessionalLogin} options={{ headerShown: false }} />
           <Stack.Screen name="ProfessionalMenu" component={ProfessionalMenu} options={{headerShown: false}} />
         </Stack.Navigator>
