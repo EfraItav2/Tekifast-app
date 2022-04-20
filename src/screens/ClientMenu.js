@@ -16,14 +16,22 @@ const Home = () => {
     <> 
         <Center>
         <Heading mt="10px" color={"primary.500"}>W<Heading mt="10px" >hat do you need?</Heading></Heading>
+
+        <Text>{"\n"}</Text>
+
         <Box height="100" w="400" shadow="2" rounded="lg" _dark={{
         bg: "coolGray.200:alpha.20"
       }} _light={{
         bg: "coolGray.200:alpha.20"
       }}>
-          <Fab renderInPortal={false} shadow={2} placement="top-right" size="sm" icon={<Icon color="white" as={MaterialIcons} name="lightbulb" size="4" />} label="see more" />
+        <Center>
+        <Text>{"\n"}</Text>
+        <Fab renderInPortal={false} shadow={2} placement="top" size="lg" icon={<Icon color="white" as={MaterialCommunityIcons} name="food-fork-drink" size="6" />} label="Food" />
+        </Center>
         </Box>
       </Center>
+
+      
 
       <Center>
         <Box height="100" w="400" shadow="2" rounded="lg" _dark={{
@@ -31,9 +39,14 @@ const Home = () => {
       }} _light={{
         bg: "coolGray.200:alpha.20"
       }}>
-          <Fab renderInPortal={false} shadow={2} placement="top-right" size="sm" icon={<Icon color="white" as={MaterialIcons} name="lightbulb" size="4" />} label="see more" />
-        </Box>
+      <Center>
+      <Text>{"\n"}</Text>
+      <Fab renderInPortal={false} shadow={2} placement="top" size="lg" icon={<Icon color="white" as={MaterialIcons} name="photo-camera" size="6" />} label="Photographer" />
       </Center>
+      </Box>
+      </Center>
+
+
 
       <Center>
         <Box height="100" w="400" shadow="2" rounded="lg" _dark={{
@@ -41,9 +54,14 @@ const Home = () => {
       }} _light={{
         bg: "coolGray.200:alpha.20"
       }}>
-          <Fab renderInPortal={false} shadow={2} placement="top-right" size="sm" icon={<Icon color="white" as={MaterialIcons} name="lightbulb" size="4" />} label="see more" />
-        </Box>
+      <Center>
+      <Text>{"\n"}</Text>
+      <Fab renderInPortal={false} shadow={2} placement="top" size="lg" icon={<Icon color="white" as={MaterialIcons} name="computer" size="6" />} label="Programer" />
       </Center>
+      </Box>
+      </Center>
+
+     
 
       <Center>
         <Box height="100" w="400" shadow="2" rounded="lg" _dark={{
@@ -51,8 +69,11 @@ const Home = () => {
       }} _light={{
         bg: "coolGray.200:alpha.20"
       }}>
-          <Fab renderInPortal={false} shadow={2} placement="top-right" size="sm" icon={<Icon color="white" as={MaterialIcons} name="lightbulb" size="4" />} label="see more" />
-        </Box>
+      <Center>
+      <Text>{"\n"}</Text>
+      <Fab renderInPortal={false} shadow={2} placement="top" size="lg" icon={<Icon color="white" as={MaterialIcons} name="web" size="6" />} label="Web designer" />
+      </Center>
+      </Box>
       </Center>
       </>
       
