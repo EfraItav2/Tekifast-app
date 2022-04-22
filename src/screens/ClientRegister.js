@@ -17,47 +17,40 @@ const Form = (props) => {
             </Heading>
 
             <VStack space={3} mt="5" bg="primary.50">
+
                 <FormControl>
                     <FormControl.Label>Email</FormControl.Label>
                     <Input placeholder="example@email.com" borderColor={"black"}/>
                 </FormControl>
+
                 <FormControl>
                     <FormControl.Label>Password</FormControl.Label>
                     <Input type="password" placeholder="Enter your password" borderColor={"black"} />
-                    <Link _text={{
-                        fontSize: "xs",
-                        fontWeight: "500",
-                        color: "indigo.500"
-                    }} alignSelf="flex-end" mt="1">
-                        Forget Password?
-                    </Link>
-                    
                 </FormControl>
-                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ClientMenu')}>
-                    Sign in
+
+                <FormControl>
+                    <FormControl.Label>Confirm Password</FormControl.Label>
+                    <Input type="password" placeholder="Enter your password" borderColor={"black"} />
+                </FormControl>
+
+                <FormControl>
+                    <FormControl.Label>Phone number</FormControl.Label>
+                    <Input placeholder="example@email.com" borderColor={"black"}/>
+                </FormControl>
+
+                <FormControl>
+                    <FormControl.Label>Addres</FormControl.Label>
+                    <Input placeholder="example@email.com" borderColor={"black"}/>
+                </FormControl>
+
+                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ClientPay')}>
+                    Sign up
                 </Button>
-                <Button mt="1" bg="primary.800" leftIcon={<Icon as={AntDesign} name="google" size="sm" />}>
-                    Sign in with Google
-                </Button>
-                <HStack mt="6" justifyContent="center">
-                    <Text fontSize="sm" color="coolGray.600" _dark={{
-                        color: "warmGray.200"
-                    }}>
-                        I'm a new user.{" "}
-                    </Text>
-                    <Link _text={{
-                        color: "indigo.500",
-                        fontWeight: "medium",
-                        fontSize: "sm"
-                    }} href="#">
-                        Sign Up
-                    </Link>
-                </HStack>
             </VStack>
         </Box>
     </Center>;
 };
-const ClientLogin = ({navigation}) => {
+const ClientRegister = ({navigation}) => {
     const theme = extendTheme({
         colors: {
             primary: {
@@ -89,4 +82,4 @@ const ClientLogin = ({navigation}) => {
     )
 }
 
-export default ClientLogin;
+export default ClientRegister;
