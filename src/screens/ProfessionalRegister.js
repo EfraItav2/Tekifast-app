@@ -8,19 +8,22 @@ const Form = (props) => {
             <Heading mt={"-60px"} textAlign="center" size="lg" fontWeight="600" color="coolGray.800" _dark={{
                 color: "warmGray.50"
             }}>
-                I'm Client
+                I'm Professional
             </Heading>
             <Heading textAlign="center" mt="2" _dark={{
                 color: "warmGray.200"
             }} color="coolGray.600" fontWeight="medium" size="xs">
                 Register
             </Heading>
-
             <VStack space={3} mt="5" bg="primary.50">
-
                 <FormControl>
                     <FormControl.Label>Email</FormControl.Label>
                     <Input placeholder="example@email.com" borderColor={"black"}/>
+                </FormControl>
+
+                <FormControl>
+                    <FormControl.Label>Name</FormControl.Label>
+                    <Input placeholder="Enter your name" borderColor={"black"}/>
                 </FormControl>
 
                 <FormControl>
@@ -33,24 +36,14 @@ const Form = (props) => {
                     <Input type="password" placeholder="Enter your password" borderColor={"black"} />
                 </FormControl>
 
-                <FormControl>
-                    <FormControl.Label>Phone number</FormControl.Label>
-                    <Input placeholder="example@email.com" borderColor={"black"}/>
-                </FormControl>
-
-                <FormControl>
-                    <FormControl.Label>Addres</FormControl.Label>
-                    <Input placeholder="example@email.com" borderColor={"black"}/>
-                </FormControl>
-
-                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ClientPay')}>
-                    Sign up
+                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ProfessionalRegisterCategory')}>
+                    Next
                 </Button>
             </VStack>
         </Box>
     </Center>;
 };
-const ClientRegister = ({navigation}) => {
+const ProfessionalRegister = ({navigation}) => {
     const theme = extendTheme({
         colors: {
             primary: {
@@ -82,4 +75,4 @@ const ClientRegister = ({navigation}) => {
     )
 }
 
-export default ClientRegister;
+export default ProfessionalRegister;
