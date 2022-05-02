@@ -14,6 +14,7 @@ import ProfessionalRegister from './src/screens/ProfessionalRegister';
 import ProfessionalRegisterCategory from './src/screens/ProfessionalRegisterCategory';
 import ProfessionalRegisterFilter from './src/screens/ProfessionalRegisterFilter';
 import ProfessionalRegisterCompany from './src/screens/ProfessionalRegisterCompany';
+
 const Stack = createNativeStackNavigator();
 
 function App() {

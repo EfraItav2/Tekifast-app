@@ -1,10 +1,14 @@
 import React from "react";
-import { Container, Text, Heading, Center, NativeBaseProvider, Input,Stack } from "native-base";
-import { Feather } from '@expo/vector-icons'; 
+import { Container, Text, Heading, Icon, NativeBaseProvider, Input, Stack, Box } from "native-base";
+import { Ionicons } from '@expo/vector-icons';
 
 const SearchClient = () => {
-  return <Stack space={4} w="750%" maxW="350px" alignItems="center" marginTop={8} >
-      <Input variant="outline" size="lg" placeholder="Search" />
-    </Stack>;
+  return (
+    <NativeBaseProvider>
+      <Box m={"10px"}>
+        <Input variant="outline" size="lg" placeholder="Search" InputLeftElement={<Icon as={<Ionicons name="search" />} size={5} ml="2" color="muted.400" />}/>
+      </Box>
+    </NativeBaseProvider>
+  )
 };
 export default SearchClient;

@@ -1,9 +1,6 @@
-
 import {  Icon, Text, NativeBaseProvider, Box, Heading, VStack, FormControl, Input, Button, Center,Link, extendTheme, Fab, Pressable } from 'native-base';
 import React from 'react';
-
-
-
+import { Fontisto, Ionicons, AntDesign } from "@expo/vector-icons";
 
 const Form = (props) => {
     return <Center w="100%" h="100%" bg="primary.50">
@@ -47,11 +44,13 @@ const RecoverPassword = ({navigation}) => {
         <NativeBaseProvider theme={theme}>
             <Box position="relative" bg="primary.50">
                 <Box position="relative" >
-                   
+                    <Button mt={"30px"} mr={"3"} alignSelf="flex-end" variant="ghost" leftIcon={<Icon as={Fontisto} name="world-o" size="sm" />}>
+                        ENG
+                    </Button>
                 </Box>
             </Box>
             <Form navigation = {navigation}/>
-            
+            <Fab mt={"20px"} onPress={()=>navigation.goBack()} renderInPortal={false} shadow={2} size="4" placement="top-left" icon={<Icon color="white" as={Ionicons} name="chevron-back" size="4" />} />
         </NativeBaseProvider>
     )
 }
