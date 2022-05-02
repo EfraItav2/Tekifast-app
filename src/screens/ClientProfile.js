@@ -26,19 +26,18 @@ const ClientProfile = ({ navigation }) => {
     })
     return (
         <NativeBaseProvider theme={theme}>
-            <Box position="relative" mt={"30px"}>
-                <Pressable alignSelf="flex-end" mt={"10px"} mr={"10px"} onPress={() => navigation.navigate("UserSelect")}>
-                    <MaterialCommunityIcons name="circle-edit-outline" size={27} color="black" />
-                </Pressable>
-            </Box>
-            <Box mt="15px" alignItems={"center"}>
-                <HStack space={2}>
+            <Box mt={"50px"} alignItems={"center"}>
+                <HStack>
                     <Avatar bg="purple.600" alignSelf="center" size="2xl" source={{
                         uri: "https://imagenes.elpais.com/resizer/pK0Or4c41-yQsPSgkLgah604U24=/1960x1103/cloudfront-eu-central-1.images.arcpublishing.com/prisa/PQK2TSGWNVFWZE263CAATCRU5Y.webp"
                     }}>
                         RB
                     </Avatar>
-
+                    <Box position="relative" mt={"65%"} ml={"-10px"}>
+                        <Pressable>
+                            <Icon as={MaterialCommunityIcons} name="circle-edit-outline" size={27} color="black" />
+                        </Pressable>
+                    </Box>
                 </HStack>
                 <Heading mt="15px" textAlign={"center"}>Nathalie Areli Albertana</Heading>
             </Box>
@@ -50,7 +49,7 @@ const ClientProfile = ({ navigation }) => {
                     </Text>
                 </HStack>
                 <Box alignItems="center" mt="15px">
-                    <Button onPress={()=>navigation.navigate("UserSelect")} colorScheme={"error"} width={"50%"} variant="subtle" leftIcon={<Icon as={MaterialCommunityIcons} name="logout" size="sm" />}>
+                    <Button onPress={() => navigation.navigate("UserSelect")} colorScheme={"error"} width={"50%"} variant="subtle" leftIcon={<Icon as={MaterialCommunityIcons} name="logout" size="sm" />}>
                         Logout
                     </Button>
                 </Box>
