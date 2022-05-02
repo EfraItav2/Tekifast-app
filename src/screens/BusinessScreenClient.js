@@ -2,7 +2,7 @@ import React from 'react';
 import { NativeBaseProvider, Heading, Fab, extendTheme, Icon, Image, Box, Text, Pressable, HStack } from 'native-base';
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 
-const ProfessionalMyBusiness = () => {
+const ClientMyBusiness = () => {
     const theme = extendTheme({
         colors: {
             primary: {
@@ -25,9 +25,6 @@ const ProfessionalMyBusiness = () => {
                 <HStack>
                 <Image source={{ uri: "https://scontent.fagu3-1.fna.fbcdn.net/v/t1.6435-9/32769182_930496470445910_155290997922725888_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEarCNrFhG_YgCqljpJRlkejVO6yj0VGSCNU7rKPRUZIC6y8fdNnAkupiORTfsCtM0SChuzcmzD5ON0oV-8idqc&_nc_ohc=_Wme9O9-ZYcAX85qWmr&tn=d6r7CYLfODQwSxM5&_nc_ht=scontent.fagu3-1.fna&oh=00_AT8Kl8mHI-iLQVBLtx0Q44yPdXFBiKxMRMon5ZCjyKs3fQ&oe=6291A6B9" }} borderRadius={100} alt="Alternate Text" size="xl" />
                 <Box position="relative" mt={"65%"} ml={"-10px"}>
-                        <Pressable>
-                            <Icon as={MaterialCommunityIcons} name="circle-edit-outline" size={27} color="black" />
-                        </Pressable>
                     </Box>
                 </HStack>
                 <Heading color={"primary.600"} size={"xl"}>MagicSoft</Heading>
@@ -62,4 +59,4 @@ const ProfessionalMyBusiness = () => {
     )
 }
 
-export default ProfessionalMyBusiness;
+export default ClientMyBusiness;

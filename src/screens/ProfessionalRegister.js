@@ -5,7 +5,7 @@ import { Fontisto, Ionicons, AntDesign } from "@expo/vector-icons";
 const Form = (props) => {
     return <Center w="100%" h="100%" bg="primary.50">
         <Box safeArea p="2" py="8" w="100%" bg="primary.50">
-            <Heading textAlign="center" size="lg" fontWeight="600" color="coolGray.800" _dark={{
+            <Heading mt={"-60px"} textAlign="center" size="lg" fontWeight="600" color="coolGray.800" _dark={{
                 color: "warmGray.50"
             }}>
                 I'm Professional
@@ -13,50 +13,37 @@ const Form = (props) => {
             <Heading textAlign="center" mt="2" _dark={{
                 color: "warmGray.200"
             }} color="coolGray.600" fontWeight="medium" size="xs">
-                Sign in to continue!
+                Register
             </Heading>
-
             <VStack space={3} mt="5" bg="primary.50">
                 <FormControl>
                     <FormControl.Label>Email</FormControl.Label>
                     <Input placeholder="example@email.com" borderColor={"black"}/>
                 </FormControl>
+
+                <FormControl>
+                    <FormControl.Label>Name</FormControl.Label>
+                    <Input placeholder="Enter your name" borderColor={"black"}/>
+                </FormControl>
+
                 <FormControl>
                     <FormControl.Label>Password</FormControl.Label>
                     <Input type="password" placeholder="Enter your password" borderColor={"black"} />
-                    <Link _text={{
-                        fontSize: "xs",
-                        fontWeight: "500",
-                        color: "indigo.500"
-                    }} alignSelf="flex-end" mt="1" onPress={()=>props.navigation.navigate('RecoverPassword')}>
-                        Forget Password?
-                    </Link>
                 </FormControl>
-                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ProfessionalMenu')}>
-                    Sign in
+
+                <FormControl>
+                    <FormControl.Label>Confirm Password</FormControl.Label>
+                    <Input type="password" placeholder="Enter your password" borderColor={"black"} />
+                </FormControl>
+
+                <Button mt="2" bg="primary.400" onPress={() => props.navigation.navigate('ProfessionalRegisterCategory')}>
+                    Next
                 </Button>
-                <Button mt="1" bg="primary.800" leftIcon={<Icon as={AntDesign} name="google" size="sm" />}>
-                    Sign in with Google
-                </Button>
-                <HStack mt="6" justifyContent="center">
-                    <Text fontSize="sm" color="coolGray.600" _dark={{
-                        color: "warmGray.200"
-                    }}>
-                        I'm a new user.{" "}
-                    </Text>
-                    <Link _text={{
-                        color: "indigo.500",
-                        fontWeight: "medium",
-                        fontSize: "sm"
-                    }} onPress={() => props.navigation.navigate('ProfessionalRegister')}>
-                        Sign Up
-                    </Link>
-                </HStack>
             </VStack>
         </Box>
     </Center>;
 };
-const ProfessionalLogin = ({navigation}) => {
+const ProfessionalRegister = ({navigation}) => {
     const theme = extendTheme({
         colors: {
             primary: {
@@ -88,4 +75,4 @@ const ProfessionalLogin = ({navigation}) => {
     )
 }
 
-export default ProfessionalLogin;
+export default ProfessionalRegister;

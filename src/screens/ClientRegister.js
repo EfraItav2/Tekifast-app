@@ -5,7 +5,7 @@ import { Fontisto, Ionicons, AntDesign } from "@expo/vector-icons";
 const Form = (props) => {
     return <Center w="100%" h="100%" bg="primary.50">
         <Box safeArea p="2" py="8" w="100%" bg="primary.50">
-            <Heading textAlign="center" size="lg" fontWeight="600" color="coolGray.800" _dark={{
+            <Heading mt={"-60px"} textAlign="center" size="lg" fontWeight="600" color="coolGray.800" _dark={{
                 color: "warmGray.50"
             }}>
                 I'm Client
@@ -13,7 +13,7 @@ const Form = (props) => {
             <Heading textAlign="center" mt="2" _dark={{
                 color: "warmGray.200"
             }} color="coolGray.600" fontWeight="medium" size="xs">
-                Sign in to continue!
+                Register
             </Heading>
 
             <VStack space={3} mt="5" bg="primary.50">

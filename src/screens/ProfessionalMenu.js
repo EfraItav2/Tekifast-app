@@ -4,8 +4,6 @@ import ProfessionalProfile from './ProfessionalProfile';
 import ProfessionalHistory from './ProfessionalHistory';
 import ProfessionalMyBusiness from './ProfessionalMyBusiness';
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-
-
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 const Tab = createMaterialBottomTabNavigator();
