@@ -9,11 +9,11 @@ import ClientMenu from './src/screens/ClientMenu';
 import ClientRegister from './src/screens/ClientRegister';
 import ClientPay from './src/screens/ClientPay';
 import ProfessionalJobDescription from './src/screens/ProfessionalJobDescription';
+import RecoverPassword from './src/screens/RecoverPassword';
 import ProfessionalRegister from './src/screens/ProfessionalRegister';
 import ProfessionalRegisterCategory from './src/screens/ProfessionalRegisterCategory';
 import ProfessionalRegisterFilter from './src/screens/ProfessionalRegisterFilter';
 import ProfessionalRegisterCompany from './src/screens/ProfessionalRegisterCompany';
-
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
           <Stack.Screen name="ProfessionalLogin" component={ProfessionalLogin} options={{ headerShown: false }} />
           <Stack.Screen name="ProfessionalMenu" component={ProfessionalMenu} options={{headerShown: false}} />
           <Stack.Screen name="ProfessionalJobDescription" component={ProfessionalJobDescription} options={{headerShown: false}} />
+          <Stack.Screen name="RecoverPassword" component={RecoverPassword} options={{headerShown: false}} />
           <Stack.Screen name="ProfessionalRegister" component={ProfessionalRegister} options={{headerShown: false}} />
           <Stack.Screen name="ProfessionalRegisterCategory" component={ProfessionalRegisterCategory} options={{headerShown: false}} />
           <Stack.Screen name="ProfessionalRegisterFilter" component={ProfessionalRegisterFilter} options={{headerShown: false}} />
